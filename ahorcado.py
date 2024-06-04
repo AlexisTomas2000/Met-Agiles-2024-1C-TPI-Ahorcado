@@ -9,3 +9,6 @@ class Ahorcado():
 
     def jugar(self,leta:chr):
         self.letra=leta
+    
+    def letrapertenece(self,letra,palabra):
+        return letra in palabra
