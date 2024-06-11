@@ -5,6 +5,7 @@ class Ahorcado():
         self.letra=''
         self.name=''
         self.intentonro=0
+        self.puntajeJug=0
   
     def login(self,name:str):
         self.nombre = name
@@ -20,3 +21,6 @@ class Ahorcado():
 
     def intento(self,intento):
         self.intentonro=intento+1
+
+    def puntaje(self,intento):
+        self.puntajeJug=(1/intento)*100

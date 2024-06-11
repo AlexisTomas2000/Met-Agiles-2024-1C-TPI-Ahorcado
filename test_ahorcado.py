@@ -5,7 +5,7 @@ palabra = 'Python'
 palabra2 = 'NoPython'
 letrap = 'h'
 letranp = 'q'
-intento=0
+intento=4
 
 def test_log():
     jugada = Ahorcado()
@@ -37,5 +37,9 @@ def test_NoarriPal():
 
 def test_intentos():
     jugada = Ahorcado()
-    jugada.intento(intento)==1
+    jugada.intento(intento)==4
+
+def test_puntaje():
+    jugada = Ahorcado()
+    jugada.puntaje(intento)==(1/4)*100
     
