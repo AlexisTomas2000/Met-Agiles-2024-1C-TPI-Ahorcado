@@ -2,8 +2,10 @@ from ahorcado import *
 
 nombre = 'Alexis'
 palabra = 'Python'
+palabra2 = 'NoPython'
 letrap = 'h'
 letranp = 'q'
+intento=0
 
 def test_log():
     jugada = Ahorcado()
@@ -20,3 +22,20 @@ def test_perteneceletra():
 def test_noperteneceletra():
     jugada = Ahorcado()
     assert jugada.letrapertenece(letranp,palabra)==False
+
+def test_arriPal():
+    jugada = Ahorcado()
+    jugada.arri_pal(palabra)=='Python'
+
+def test_arriPal():
+    jugada = Ahorcado()
+    jugada.arri_pal(palabra)=='Python'
+
+def test_NoarriPal():
+    jugada = Ahorcado()
+    jugada.arri_pal(palabra2)=='Python'
+
+def test_intentos():
+    jugada = Ahorcado()
+    jugada.intento(intento)==1
+    
